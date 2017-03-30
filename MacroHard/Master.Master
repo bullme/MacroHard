@@ -1,0 +1,39 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Master.master.cs" Inherits="MacroHard.Master" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>MacroHard</title>
+    <link href="content/bootstrap.css" rel="stylesheet" type="text/css" />
+<link href="content/bootstrap-responsive.min.css.css" rel="stylesheet" type="text/css" />
+<asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>  
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <div class="container">
+            <div class="row-fluid">
+                <div class="span12">
+                    <div class="page-header">
+                    <h1>MACROHARD</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div class="col-md-3">
+                    <ul class="nav nav-list">
+                        <li class="nav-header">Navigation</li>
+                        <li class="active"><a href="#">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-9"></div>
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+                </div>
+            </div>
+        </div>
+    </form>
+    <script src="@Url.Content("/Scripts/bootstrap/bootstrap.min.js")" type="text/javascript"></script>
+</body>
+</html>
